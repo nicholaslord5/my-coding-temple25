@@ -112,5 +112,4 @@ def get_members_in_age_range(start_age, end_age):
             cursor.close()
             connection.close()
 
-# Example usage:
 get_members_in_age_range(25, 30)  
