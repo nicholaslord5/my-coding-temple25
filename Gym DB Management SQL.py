@@ -98,10 +98,8 @@ def get_members_in_age_range(start_age, end_age):
             query = "SELECT id, name, age FROM Members WHERE age BETWEEN %s AND %s"
             cursor.execute(query, (start_age, end_age))
             
-            # Fetch all results
             results = cursor.fetchall()
             
-            # Print each result
             for member in results:
                 print(f"ID: {member[0]}, Name: {member[1]}, Age: {member[2]}")
                 
